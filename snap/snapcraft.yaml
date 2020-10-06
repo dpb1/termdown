@@ -10,12 +10,12 @@ confinement: strict
 apps:
   termdown:
     environment:
-      # I don't know what I am doing
       LC_ALL: C.UTF-8
       LANG: C.UTF-8
-    command: termdown
+    command: bin/termdown
 
 parts:
   termdown:
     source: .
     plugin: python
+    python-packages: [wheel]
