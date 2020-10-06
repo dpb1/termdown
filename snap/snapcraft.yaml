@@ -15,4 +15,3 @@ parts:
   termdown:
     source: .
     plugin: python
-    python-version: python3
