@@ -9,7 +9,11 @@ confinement: strict
 
 apps:
   termdown:
-    command: env LC_ALL=C.UTF-8 LANG=C.UTF-8 termdown
+    environment:
+      # I don't know what I am doing
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+    command: termdown
 
 parts:
   termdown:
